@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./index.css" rel="stylesheet" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <header class="h-96-px">
+      <nav class="bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="flex justify-between">
+            <!-- Mobile menu button -->
+            <div class="flex items-center">
+              <button class="outline-none mobile-menu-button">
+                <svg
+                  class="w-6 h-6 text-primary hover:text-green-500"
+                  x-show="!showMenu"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+              </button>
+              <button
+                class="outline-none mobile-menu-button-close text-primary hidden text-2xl"
+              >
+                &times;
+              </button>
+            </div>
+
+            <div class="hidden flex space-x-7">
+              <ul>
+                <li class="active font-re">Order</li>
+                <li>Dark kitchens</li>
+                <li>Rolling reward</li>
+                <li>Catering</li>
+                <li>About</li>
+              </ul>
+            </div>
+
+            <div class="logo">
+              <img src="./img/top-logo.png" width="150" />
+            </div>
+
+            <div class="flex">
+              <div class="align-middle m-auto text-primary">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 000-1.5H5.378A2.25 2.25 0 017.5 15h11.218a.75.75 0 00.674-.421 60.358 60.358 0 002.96-7.228.75.75 0 00-.525-.965A60.864 60.864 0 005.68 4.509l-.232-.867A1.875 1.875 0 003.636 2.25H2.25zM3.75 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM16.5 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hidden mobile-menu">
+          <ul>
+            <li class="active">
+              <a
+                href="#index.html"
+                class="block text-sm px-2 py-4 text-primary font-semibold"
+                >Order</a
+              >
+            </li>
+            <li>
+              <a
+                href="#kitchen.html"
+                class="block text-sm px-2 py-4 text-tertiary font-semibold hover:bg-green-500 transition duration-300"
+                >Dark kitchens</a
+              >
+            </li>
+            <li>
+              <a
+                href="#reward.html"
+                class="block text-sm px-2 py-4 text-tertiary font-semibold hover:bg-green-500 transition duration-300"
+                >Rolling Reward</a
+              >
+            </li>
+            <li>
+              <a
+                href="#catering.html"
+                class="block text-sm px-2 py-4 text-tertiary font-semibold hover:bg-green-500 transition duration-300"
+                >Catering</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about.html"
+                class="block text-sm px-2 py-4 text-tertiary font-semibold hover:bg-green-500 transition duration-300"
+                >Contact us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="flex-col">
+      <div
+        class="flex bg-contain md:order-1"
+        style="background-image: url('./img/hero-bg.png')"
+      >
+        <div class="w-1/4 md:w-1/2">
+          <div class=""></div>
+        </div>
+        <div class="w-3/4 md:w-1/2">
+          <div class="z-10 relative top-1/2 -left-16 h-0">
+            <img src="./img/hero-logo.png" width="100" />
+          </div>
+          <div class="z-5">
+            <img src="./img/hero.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-5 md:order-0 mx-5">
+        <div class="text-2xl text-chuckgray">Asian Cuisine</div>
+        <div class="font-bold text-2xl">READY TO ROLL</div>
+        <div>
+          <span class="text-primary font-semibold">CHICKEN RICE BOWL</span
+          >・<span class="text-primary font-semibold">WINGS</span>・<span
+            class="text-primary font-semibold"
+            >SPRING ROLLS</span
+          >
+        </div>
+
+        <div class="my-10">
+          <a
+            href="#"
+            class="text-gray-50 hover:bg-secondary bg-primary w-32 rounded-2xl text-center p-4"
+            >Order Now</a
+          >
+        </div>
+        <div>
+          <div class="text-tertiary font-semibold">Find us on:</div>
+          <div class="mt-5">
+            <ul class="flex text-primary">
+              <li><img src="./img/facebook.svg" class="w-6 text-primary" /></li>
+              <li>
+                <img src="./img/twitter.svg" class="w-6 text-primary ml-2" />
+              </li>
+              <li><img src="./img/instagram.svg" class="w-6 ml-2" /></li>
+              <li><img src="./img/tiktok.svg" class="w-6 ml-2" /></li>
+              <li><img src="./img/youtube.svg" class="w-6 ml-2" /></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="py-4 h-auto ">
+        <div class="text-2xl text-center font-bold">
+          MENU
+        </div>
+        <div class="flex md:justify-center justify-evenly mt-10 flex-wrap max-w-screen-md	 mx-auto">
+          <img src="./img/menu-chicken-rice.jpg" class="rounded-2xl mx-2 md:mx-10 mt-3 md:mt-10" width="300"  />
+          <img src="./img/menu-fried-chicken.jpg" class="rounded-2xl mx-2 md:mx-10 mt-3 md:mt-10" width="300"  />
+          <img src="./img/menu-roll.jpg" class="rounded-2xl mx-2 md:mx-10 mt-3 md:mt-10" width="300"  />
+          <img src="./img/menu-fried-chicken.jpg" class="rounded-2xl mx-2 md:mx-10 mt-3 md:mt-10" width="300"  />
+        </div>
+      </div>
+      <div class="flex flex-col bg-secondary h-48">
+        <div class="text-2xl font-bold text-center pt-5 pb-2">Join our C&Rollin' Rewards</div>
+        <div class="text-center pb-5">And receive $5 off for your next order</div>
+        <div class="text-center pt-5">
+          <a href="#" class="w-32 p-4 h-24 text-white rounded-full bg-primary">
+            Join now
+          </a>
+        </div>
+      </div>
+      <div class="flex h-96">
+        <div class="w-1/2 flex flex-col justify-center">
+            <div class="text-center font-semibold">
+              Interested to partner with us?
+            </div>
+            <div class="text-center m-10">
+              <a href="#" class="m-4 p-4 bg-primary rounded-full">Learn More</a>
+            </div>
+        </div>
+        <div class="w-1/2 bg-cover" style="background-image: url('./img/partner.jpg')" >
+        </div> 
+      </div>
+    </main>
+    <footer class="bg-tertiary p-10">
+      <div class="flex justify-center">
+
+        <div class="w-1/2">
+          <div class="flex text-primary mx-auto justify-around px-5 w-2/3 sm:w-50">
+            <img src="./img/facebook.svg" class="text-primary mr-1" width="24" />
+            <img src="./img/twitter.svg" class="text-primary mr-1"  width="24"/>
+            <img src="./img/instagram.svg" class=" mr-1" width="24" />
+            <img src="./img/tiktok.svg" class=" mr-1"  width="24"/>
+            <img src="./img/youtube.svg" class=" mr-1"  width="24"/>
+          </div>
+        </div>
+
+        <div class="w-1/2">
+          <ul class="font-bold flex flex-col">
+            <li><a href="#">Terms of use</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Allergen & Nutritional Infomation</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="text-center my-10 text-xs">
+        © 2022 CHUCK AND ROLL
+      </div>
+    </footer>
+
+    <script>
+      const btn = document.querySelector("button.mobile-menu-button");
+      const closeBtn = document.querySelector(
+        "button.mobile-menu-button-close"
+      );
+      const menu = document.querySelector(".mobile-menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        btn.classList.toggle("hidden");
+        closeBtn.classList.toggle("hidden");
+      });
+      closeBtn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        btn.classList.toggle("hidden");
+        closeBtn.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
